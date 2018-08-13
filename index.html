@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A-Frame Apartment</title>
+        
+        <!-- scripts to support Google Poly; requires aframe version 0.7.0 and the gblock.js script -->
+        <!-- reference: https://github.com/archilogic-com/aframe-gblock -->
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/archilogic-com/aframe-gblock/6498b71d/dist/gblock.js"></script>
+        
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="wood" src="images/wood_panel.jpg">
+                
+                <!-- the chair is loaded by nesting it inside the a-assets tag -->
+                <a-assets-item id="chair-obj" src="images/chair/model.obj"></a-assets-item>
+                <a-assets-item id="chair-mtl" src="images/chair/materials.mtl"></a-assets-item>
+                
+            </a-assets>
+            
+            <!-- camera --> 
+            <a-entity position="-10 20 80" id="camera">
+                <a-camera>
+                    <a-cursor color="white"></a-cursor>
+                </a-camera>
+            </a-entity>
+            
+            <!-- back wall -->
+            <a-plane id="back" color="#bbc3cc" height="40" width="113" position="1 0 -66"></a-plane>
+            
+            <!-- floor -->
+            <a-plane id="floor" material="src:#wood" height="100" width="100" position="0 -10 0" rotation="-90 180 0"></a-plane>
+            
+            <!-- chair - notice how the a-obj-model is called with the obj ID and the obj mtl ID -->
+            <a-obj-model src="#chair-obj" mtl="#chair-mtl" scale="10 10 10" position="-25 -5 0"></a-obj-model>
+            
+            <!-- chicken truck - imported from Google Poly -->
+            <a-entity id="chickenTruck" gblock="https://poly.google.com/view/8YPlI6aoZvP" scale="5 5 5" position="0 0 -10"></a-entity>
+            
+            <!-- pug - imported from Google Poly; notice how we had to scale this SIGNIFICANTLY to view the pug! -->
+            <a-entity id="pug" gblock="https://poly.google.com/view/11VUVASX21Q" scale="20 20 20" position="0 -20 15"></a-entity>
+            
+            <a-sky color="aliceblue"></a-sky>
+            
+        </a-scene>
+
+    </body>
+</html>
