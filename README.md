@@ -1,6 +1,6 @@
 # Build your dream apartment!
 
-For this lab, use your imagination and your new AFrame skills to build out your dream apartment. 
+For this lab, use your imagination and your new AFrame skills to build out your dream apartment. A few fun models have been placed in the apartment to get you started.
 
 You'll need to use planes and positioning to build the walls, floor, and ceiling. An example of a wall is included in `index.html`, but feel free to make your apartment bigger, smaller, or have multiple rooms.
 
