@@ -1,6 +1,8 @@
-# Build your dream apartment!
+# Build your dream apartment! (attempt #2)
 
 For this lab, use your imagination and your new AFrame skills to build out your dream apartment. A few fun models have been placed in the apartment to get you started.
+
+An excellent resource is to use [Christian's A-Frame cheatsheet](https://github.com/cseremetis/A-Frame-Cheat-Sheet)!
 
 You'll need to use planes and positioning to build the walls, floor, and ceiling. An example of a wall is included in `index.html`, but feel free to make your apartment bigger, smaller, or have multiple rooms.
 
