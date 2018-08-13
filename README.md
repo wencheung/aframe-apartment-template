@@ -4,6 +4,7 @@ For this lab, use your imagination and your new AFrame skills to build out your 
 
 You'll need to use planes and positioning to build the walls, floor, and ceiling. An example of a wall is included in `index.html`, but feel free to make your apartment bigger, smaller, or have multiple rooms.
 
+### Downloading Models
 
 You'll also want to add models to your apartment to make it look more realistic. You can download models from [Clara.io](https://clara.io/library) or [Google Poly Blocks](https://poly.google.com/) and use them in your project by including them as assets. 
  
@@ -22,6 +23,8 @@ And then using the asset ```id``` and as your ```a-obj-model ``` ```src``` and `
 <!--Couch-->
 <a-obj-model src="#couch-obj" mtl="#couch-mtl" position="-23 -10 -8" scale="7 7 7"></a-obj-model>
 ```
+
+### Using Google Poly
 
 Alternatively, you can load models directly from Google Poly using an `a-entity` tag with the property of `gblock="url"`.
 
